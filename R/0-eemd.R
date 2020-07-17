@@ -114,13 +114,5 @@ eemd_series <- function(timeseries, ensemble_size = 100, noise_strength = 0.2,
 }
 
 
-# parameters
-file_loca <- "data/eemd_test.txt"
-# read file input
-timeseries <- read.table(file_loca)$V1
-res <- eemd_series(timeseries)
-
-plot(res[[2]])
-
 
 
